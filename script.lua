@@ -13,6 +13,7 @@ local AutoFarm = Window:NewTab("AutoFarm")
 local AutoRebirth = Window:NewTab("Rebirths")
 local AutoEgg = Window:NewTab("Auto Eggs")
 local Misc = Window:NewTab("Misc")
+local Settings = Window:NewTab("Settings")
 
 
 -- Credits Section
@@ -40,6 +41,10 @@ local CraftPetsSection = AutoEgg:NewSection("Fuse All Pets")
 local PotionsSection = Misc:NewSection("Potions")
 local PortalsSection = Misc:NewSection("Teleport")
 local UnlockPortalsSection = Misc:NewSection("Unlock Portals")
+
+-- Settings Section
+
+local SettingsSection = Settings:NewSection("UI")
 
 --Scripts
 
@@ -467,4 +472,7 @@ game:GetService("ReplicatedStorage").Events.Potion:FireServer(unpack(args))
 
 end
 end
+end)
+SettingsSection:NewKeybind("LeftControl", "toggle ", Enum.KeyCode.LeftControl, function()
+	Library:ToggleUI(LeftControl)
 end)
