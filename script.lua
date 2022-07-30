@@ -1,10 +1,10 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Welcome to PDS";
+    Title = "Welcome to KYS";
     Text = "Our discord server invite is copied to ur clipboard";
 })
 setclipboard("https://discord.gg/hngpBtZrEv")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Puchatek2/adasdasdasd/main/mymine.lua"))()
-local Window = Library.CreateLib("P/A", "Ocean")
+local Window = Library.CreateLib("KYS SYSTEM DEV", "Ocean")
 
 --Tab's
 
